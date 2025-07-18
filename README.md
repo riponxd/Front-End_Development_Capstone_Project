@@ -2,6 +2,9 @@
 
 Welcome to the DocFinder project! This is a professional, modern web application for booking doctor appointments, searching for doctors, submitting reviews, and managing user profiles. The project is built using HTML, CSS, and JavaScript, and is designed for easy deployment and use with Live Server or any static hosting.
 
+## 🚀 Live Demo
+[View on GitHub Pages](https://riponxd.github.io/Front-End_Development_Capstone_Project/)
+
 ## Features
 
 - **Beautiful Navbar**: Clean and responsive navigation bar for easy access to all sections.
