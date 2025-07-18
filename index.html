@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Appointment Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">DocFinder</div>
+        <ul class="nav-links">
+            <li><a href="#" id="home-link">Home</a></li>
+            <li><a href="#" id="find-doctor-link">Find Doctor</a></li>
+            <li><a href="#" id="reviews-link">Reviews</a></li>
+            <li><a href="#" id="profile-link">Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Signup Form (default visible) -->
+        <div id="signup-section">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <input type="email" id="signup-email" placeholder="Enter Gmail" required><br>
+                <input type="password" id="signup-password" placeholder="Enter Password" required><br>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+        </div>
+
+        <!-- Login Form (hidden by default) -->
+        <div id="login-section" style="display:none;">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Enter Gmail" required><br>
+                <input type="password" id="login-password" placeholder="Enter Password" required><br>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+        </div>
+
+        <!-- Home Section (hidden by default) -->
+        <div id="home-section" style="display:none;">
+            <h2>Welcome to DocFinder!</h2>
+            <div id="notification"><b>Notification:</b> No new notifications for today.</div>
+            <div id="appointment-section">
+                <h3>Appointment Booking</h3>
+                <form id="appointment-form-demo">
+                    <input type="text" placeholder="Doctor Name" required><br>
+                    <input type="text" placeholder="Date (DD/MM/YYYY)" required><br>
+                    <button type="button" disabled>Book Now (Demo)</button>
+                </form>
+                <div id="appointment-result-demo"></div>
+            </div>
+        </div>
+
+        <!-- Find Doctor Section (hidden by default) -->
+        <div id="find-doctor-section" style="display:none;">
+            <h3>Find Doctor</h3>
+            <input type="text" placeholder="Enter Doctor Name">
+            <button type="button" disabled>Search (Demo)</button>
+            <div id="doctor-list-demo"></div>
+        </div>
+
+        <!-- Reviews Section (hidden by default) -->
+        <div id="reviews-section" style="display:none;">
+            <h3>Reviews</h3>
+            <form id="review-form-demo">
+                <input type="text" placeholder="Write your review" required><br>
+                <label>Rating: <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select></label><br>
+                <button type="button" disabled>Submit (Demo)</button>
+            </form>
+            <div id="review-list-demo"></div>
+        </div>
+
+        <!-- Profile Section (hidden by default) -->
+        <div id="profile-section" style="display:none;">
+            <h3>Profile</h3>
+            <div>Gmail: <b>demo@gmail.com</b></div>
+            <div>Name: <span id="profile-name-demo">User</span></div>
+            <form id="change-name-form-demo">
+                <input type="text" placeholder="Enter new name" required>
+                <button type="button" disabled>Change Name (Demo)</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <button id="logout-btn" style="display:none;">Logout</button>
+        <p>&copy; 2025 DocFinder</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
